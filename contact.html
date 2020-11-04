@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piroll</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Nunito+Sans:wght@400;600;700&family=PT+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+  </head>
+  <body class="contacts-page">
+    <header class="header-contact">
+      <div class="container" max-height="200px">
+        <div class="top-menu">
+          <div id="logo-light">
+            <a href="./index.html"
+              ><img src="./img/logo.svg" alt="logo Piroll"
+            /></a>
+          </div>
+
+          <!--
+===============================================
+------- Меняющееся гамбургер-меню --------------
+===============================================
+-->
+
+          <div class="container-menu-burger">
+            <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+            <input id="menu_toggle" type="checkbox" />
+
+            <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+
+            <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+            <label class="menu_btn" for="menu_toggle">
+              <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+              <span></span>
+            </label>
+
+            <!-- Навигация -->
+            <nav class="menu_box">
+              <a class="menu_item" href="index.html">Home</a>
+              <a class="menu_item" href="">About</a>
+              <a class="menu_item" href="">Work</a>
+              <a class="menu_item" href="">Blog</a>
+              <a class="menu_item disabled" href="">Contact</a>
+              <a class="menu_item" href="">Purchase</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <iframe
+          class="google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.1730683831647!2d-118.34143958481496!3d34.09070658059561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bebb074ab833%3A0x3003ecc0a07f08fe!2zU2FudGEgTW9uaWNhIEJsdmQsIExvcyBBbmdlbGVzLCBDQSwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1596755548584!5m2!1sru!2sby"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          width="100%"
+          height="450"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <div class="container">
+        <div class="office-address">
+          <h2 class="align-left">Contact Info:</h2>
+          <p class="simple-text align-left">
+            To give give beginning divide, cattle. Give moving won't, there the
+            abundantly she'd she'd brought air upon. Light hath subdue. Life
+            days creature upon first heaven gathering dry.
+          </p>
+          <div class="contacts simple-text">
+            <address class="simple-text">
+              <span class="black-bold">Address: </span>10111 Santa Monica
+              Boulevard, LA
+            </address>
+            <p class="align-left">
+              <span class="black-bold">Phone: </span
+              ><a href="tell:+44987065908">+44 987 065 908</a>
+            </p>
+            <p class="align-left">
+              <span class="black-bold">Email: </span
+              ><a href="mailto:info@Example.com">info@Example.com</a>
+            </p>
+            <p class="align-left">
+              <span class="black-bold">Fax: </span>+44 987 065 909
+            </p>
+          </div>
+        </div>
+        <div class="mail-form"></div>
+      </div>
+    </main>
+  </body>
+</html>

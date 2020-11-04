@@ -1,0 +1,379 @@
+/*{
+  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "PT Serif", serif;
+}
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+#header-index {
+  background: #505050 url("img/portfolio-single-3-1.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 570px;
+}
+
+.dark-bg {
+  position: relative;
+}
+
+.dark-bg:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  max-width: 70%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.top-menu {
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+
+#logo-light img {
+  width: 31px;
+  float: left;
+}
+
+#top-nav {
+  float: right;
+}
+
+#top-nav li {
+  display: inline;
+  font: caption "Montserrat", sans-serif #bfbfbf;
+  padding: 0 12px;
+}
+
+#top-nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10pt;
+  line-height: 10px;
+  color: #bfbfbf;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#top-nav a:hover {
+  color: #fff;
+}
+
+h1 {
+  font-size: 28pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  line-height: 2em;
+  font-weight: 500;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-hedding {
+  clear: both;
+  max-width: 780px;
+  margin: 0 auto;
+  padding-top: 100px;
+  z-index: 10;
+}
+
+.text-hedding h1 {
+  padding-bottom: 20px;
+}
+
+.btn-container {
+  padding-top: 40px;
+  text-align: center;
+}
+.button-blue {
+  background-color: #10c9c3;
+  border: none;
+  width: 240px;
+  height: 54px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.button-blue:hover {
+  background-color: #252525;
+  border: none;
+}
+
+.transition {
+  transition: background-color 0.4s;
+}
+
+.home-pages-examples,
+.functional-inner-pages-ex,
+.modern-header-styles-ex {
+  margin: 0 14%;
+  margin-top: 60px;
+}
+
+.home-pages-examples figure,
+.functional-inner-pages-ex figure,
+.modern-header-styles-ex figure {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
+}
+
+.home-pages-examples figure img,
+.functional-inner-pages-ex figure img,
+.modern-header-styles-ex figure img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 22pt;
+  font-weight: 500;
+  text-align: center;
+  color: #171717;
+}
+
+.under-heading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12pt;
+  font-style: italic;
+  line-height: 40pt;
+  color: #5f5f5f;
+}
+
+h3 {
+  font-size: 14pt;
+  font-weight: 500;
+  text-align: center;
+  text-decoration-style: none;
+  color: #000;
+  padding: 25px 0;
+  margin-bottom: 50px;
+  transition: 0.2s color;
+  text-align: center !important;
+}
+
+figure a:hover h3 {
+  color: #10c9c3;
+}
+
+.creative-project-pages {
+  background: #f2f2f2;
+}
+
+.portfolio-layouts {
+  background: #10c9c3 url("./img/promo-bg-1.jpg") no-repeat;
+}
+
+.portfolio-layouts-ex {
+  margin: 0 10px;
+}
+
+.portfolio-layouts-ex img {
+  width: 100%;
+  margin-bottom: -5px;
+  padding: 0;
+}
+
+.create-with-piroll {
+  background: #252525 url("./img/promo-bg-2.jpg") no-repeat center;
+  height: 460px;
+}
+
+footer {
+  background: #141414;
+  height: 110px;
+}
+
+footer p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11pt;
+  color: #bcbcbc;
+  padding-top: 40px;
+}
+
+.container-carousel {
+  min-height: 200px;
+  margin: 60px 0 0 0;
+  padding-bottom: 115px;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #999;
+}
+/*
+===============================================
+------- Меняющееся гамбургер-меню --------------
+===============================================
+*/
+.container-menu-burger {
+  float: right;
+  margin: 0;
+  text-align: right;
+  padding-top: -9px;
+}
+
+/* скрываем чекбокс */
+#menu_toggle {
+  opacity: 0;
+  position: absolute;
+}
+
+/* стилизуем кнопку */
+.menu_btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center; /* центрируем содержимое кнопки */
+  position: relative;
+  padding-top: 5px;
+
+  width: 22px;
+  height: 20px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 3;
+  margin-top: 0;
+}
+
+/* добавляем "гамбургер" */
+.menu_btn > span,
+.menu_btn > span:before,
+.menu_btn > span:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #252525;
+}
+
+.menu_btn > span:before {
+  content: "";
+  top: -8px;
+}
+
+.menu_btn > span:after {
+  content: "";
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu_box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 100px 0;
+  list-style: none;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* элементы меню */
+.menu_item {
+  display: block;
+  padding: 12px 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10pt;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.menu_item:hover {
+  background-color: #f6f6f6;
+  color: #252525;
+}
+
+#menu_toggle:checked ~ .menu_btn > span {
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+#menu_toggle:checked ~ .menu_btn > span:before {
+  top: 0;
+  transform: rotate(0);
+  background-color: #fff;
+}
+#menu_toggle:checked ~ .menu_btn > span:after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: #fff;
+}
+#menu_toggle:checked ~ .menu_box {
+  visibility: visible;
+  right: 215px;
+  z-index: 1;
+}
+
+/*
+===============================================
+------------------ Контакты -------------------
+===============================================
+*/
+.contacts-page {
+  background-color: #fff;
+}
+
+.office-address {
+  width: 40%;
+}
+
+.container .office-address {
+  margin-top: 60px;
+}
+
+.container .office-address h2 {
+  margin-bottom: 30px;
+}
+
+.simple-text,
+.simple-text p {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.65;
+  color: #5f5f5f;
+  font-size: 12pt;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.black-bold {
+  font-weight: 700;
+  color: #000;
+}
